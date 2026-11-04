@@ -38,3 +38,20 @@ pip install -r requirements-gpu.txt
 ImageForge detects the GPU automatically. If CUDA is not usable (missing drivers, cuDNN, …)
 ONNX Runtime silently falls back to the CPU. The right sidebar shows which one is active
 (`Model ready · GPU (CUDA)` or `Model ready · CPU`).
+
+### First run needs internet (background removal only)
+
+rembg downloads its neural-network model the first time it is used and caches it in
+`~/.u2net/` (Fast ≈ 5 MB, Balanced/Best ≈ 170 MB). The status indicator shows *Loading…*
+meanwhile; later runs work offline.
+
+## 2. Run
+
+```bash
+python main.py
+```
+
+Linux note: Qt 6 needs the XCB libraries. On Debian/Ubuntu:
+`sudo apt install libxcb-cursor0 libxkbcommon-x11-0`.
+
+---
