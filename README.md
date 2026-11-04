@@ -25,3 +25,12 @@ python -m venv .venv
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+### NVIDIA GPU (optional)
+
+`requirements.txt` installs the CPU build of ONNX Runtime, which works everywhere. For CUDA
+acceleration use the GPU requirements **instead** (never both):
+
+```bash
+pip uninstall -y onnxruntime
+pip install -r requirements-gpu.txt
+```
