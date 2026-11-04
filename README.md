@@ -34,3 +34,7 @@ acceleration use the GPU requirements **instead** (never both):
 pip uninstall -y onnxruntime
 pip install -r requirements-gpu.txt
 ```
+
+ImageForge detects the GPU automatically. If CUDA is not usable (missing drivers, cuDNN, …)
+ONNX Runtime silently falls back to the CPU. The right sidebar shows which one is active
+(`Model ready · GPU (CUDA)` or `Model ready · CPU`).
