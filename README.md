@@ -239,3 +239,8 @@ The layers only depend downwards: `ui → workers → services/core → models/u
 
 Source images up to 150 MP / 250 MB, output up to 100 MP and 16384 px per side, downloads up to
 100 MB. Animated GIF/WebP are processed as a single (first) frame.
+
+## 8. Application Screenshots
+
+### Main Interface
+![ImageForge Main Interface](screenshots/main_screen.png)
